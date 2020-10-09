@@ -9,16 +9,13 @@ flimg.setSize(flW, flH);
 
 for (var pixel of flimg.values()){
     if (pixel.getX()<=flW/3){
-     var newR = 255;
-     pixel.setRed(newR);
+     pixel.setRed(255);
     }
     if (pixel.getX()>flW/3 && pixel.getX()< (2*(flW/3))){
-     var newG= 255;
-     pixel.setGreen(newG);
+     pixel.setGreen(255);
     }
     if (pixel.getX()>=(2*(flW/3))){
-     var newB= 255;
-     pixel.setBlue(newB);
+     pixel.setBlue(255);
     }
 }
  
