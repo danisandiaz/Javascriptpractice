@@ -1,0 +1,16 @@
+// program to change all the pixels in an image that are not white into yellow
+
+
+var flimg = new SimpleImage("duke_blue_devil.png");   // image used was a Duke logo
+
+for (var pixel of flimg.values()){
+    if  ((pixel.getGreen()!=255) && (pixel.getRed()!=255) && (pixel.getBlue()!=255)){
+     var newR = 255;
+     pixel.setRed(newR);
+     var newG = 255;
+     pixel.setGreen(newG);
+     var newB = 0;
+     pixel.setBlue(newB);
+    }
+}
+print(flimg);
